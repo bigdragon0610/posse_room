@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./css/output.css" />
     <title>POSSE ROOM</title>
   </head>
-  <body class="bg-blue-50">
+  <body class="bg-blue-50 min-h-screen">
     <header class="bg-white">
       <h1 class="font-bold text-2xl text-blue-500 pl-5 py-3">POSSE ROOM</h1>
     </header>
     <main>
-      <form class="max-w-xs mx-auto pt-8">
+      <form class="max-w-xs mx-auto pt-8" id="form">
         <section class="flex justify-between">
           <label>
             <p class="text-blue-500 font-bold mb-2">今日の日付</p>
@@ -60,6 +60,7 @@
           </label>
         </section>
         <button
+          id="submit_button"
           type="submit"
           class="bg-blue-500 text-white font-bold rounded-md shadow-md py-2 px-3 mt-4 block ml-auto"
         >
@@ -68,10 +69,11 @@
       </form>
     </main>
     <footer class="max-w-xs mx-auto mt-8">
-      <p class="text-xl font-bold">
+      <p class="text-xl font-bold text-blue-500">
         みんなの居場所を、みんなで快適にしていきましょう！
       </p>
     </footer>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
