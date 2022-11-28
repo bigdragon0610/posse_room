@@ -5,7 +5,7 @@ document.getElementById("form").addEventListener("submit", (e) => {
   html2canvas(document.querySelector("body")).then((canvas) => {
     let downloadEle = document.createElement("a");
     downloadEle.href = canvas.toDataURL("image/png");
-    downloadEle.download = "canvas.png";
+    downloadEle.download = "posse_room.png";
     downloadEle.click();
   });
   submitButton.style.display = "block";
